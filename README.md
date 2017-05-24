@@ -1,4 +1,4 @@
-#runout_time
+# runout_time
 Find Extreme Runout vs Time
 
     1. Run `g++ -std=c++11 main.cpp -o main`
