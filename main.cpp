@@ -87,8 +87,6 @@ int main() {
 
       //! Get maximum value of runout
       runout.emplace_back(*std::max_element(xcoord.begin(), xcoord.end()));
-
-      std::cout << runout.back() << "\n";
     }
 
     //! Open output file and store all data
