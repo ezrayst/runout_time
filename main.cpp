@@ -36,7 +36,8 @@ int main() {
     outputfilename = foldername + "runout.txt";
 
     //! Loop through different input file name
-    for (unsigned t = 0; t <= 70; ++t) {
+    unsigned ntime = 50;
+    for (unsigned t = 0; t <= ntime; ++t) {
 
       //! Get vector time_step that contains the time index
       time_step.push_back(t * 1000);
@@ -94,7 +95,7 @@ int main() {
     //! Open output file and store all data
     std::ofstream outputFile(outputfilename);
 
-    for (unsigned i = 0; i <= 70; ++i) {
+    for (unsigned i = 0; i <= ntime; ++i) {
       outputFile << time_step.at(i) << "\t" << runout.at(i) << "\n";
     }
 
